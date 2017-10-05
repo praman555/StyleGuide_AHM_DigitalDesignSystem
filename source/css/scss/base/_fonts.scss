@@ -1,0 +1,58 @@
+/*------------------------------------*\
+    #1 - Font Family
+\*------------------------------------*/
+
+/*
+ * 1) Font families involve three varients to keep fonts in sync. The
+ *    first varient defines the Light fonts, the second varient
+ *    defines the Medium fonts and the third varient defines the Regular
+      fonts.
+ */
+
+
+/*
+ * Light Fonts
+ */
+@font-face {
+  font-family: 'font-RobotoLight';
+  src: url('../../../fonts/roboto-light-webfont.woff2') format('woff2'),
+  url('../../../fonts/roboto-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*
+ * Medium Fonts
+ */
+@font-face {
+  font-family: 'font-RobotoMedium';
+  src: url('../../../fonts/roboto-medium-webfont.woff2') format('woff2'),
+  url('../../../fonts/roboto-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*
+ * Regular Fonts
+ */
+@font-face {
+  font-family: 'font-RobotoRegular';
+  src: url('../../../fonts/roboto-regular-webfont.woff2') format('woff2'),
+  url('../../../fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+/*------------------------------------*\
+    #2 - Font Size
+\*------------------------------------*/
+
+$font-size-base: 14px;
+$font-size-small: ($font-size-base)-2px;
+$font-size-med: ($font-size-base)+2px;
+$font-size-large: ($font-size-base)+4px;

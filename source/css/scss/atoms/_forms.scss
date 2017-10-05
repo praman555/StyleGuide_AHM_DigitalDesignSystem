@@ -1,0 +1,430 @@
+/* Input Fileds */
+.a-input {
+
+  /* Common Input styles */
+  &Common {
+    border: $border-base solid $color-neutral-grey-medium;
+    border-radius: $border-radius-small;
+    line-height: 1;
+    font-size: $font-size-med;
+    font-family: font-RobotoRegular;
+  }
+  /* Ends - Common Input styles */
+
+  /* Input Text styles */
+  &Text {
+    @extend .a-inputCommon;
+    padding: $pad-12px $pad-half;
+
+    /* Input Text - Disabled styles */
+    &[disabled="disabled"] {
+      background-color: $color-neutral-pantone-7541;
+    }
+    /* Ends - Input Text - Disabled styles */
+
+    /* Input Text - Focused styles */
+    &:focus {
+      border: $border-med solid $color-secondary-pantone-2925;
+    }
+    /* Ends - Input Text - Focused styles */
+
+    /* Input Text - Success styles */
+    &--success {
+      border: $border-med solid $color-utility-success;
+
+      &Message {
+        color: $color-utility-success;
+        margin: 4px 0;
+        display: block;
+      }
+    }
+    /* Ends - Input Text - Success styles */
+
+    /* Input Text - Error styles */
+    &--error {
+      border: $border-med solid $color-utility-error;
+
+      &Message {
+        color: $color-utility-error;
+        margin: 4px 0;
+        display: block;
+      }
+    }
+    /* Ends - Input Text - Error styles */
+
+  }
+  /* Ends - Input Text styles */
+
+  /* Input Search styles */
+  &Search {
+    @extend .a-inputCommon;
+    padding: 0.75em 0.75em 0.75em 2.5em;
+  }
+  /* Ends - Input Search styles */
+
+  &SearchSuggestions {
+
+  }
+}
+/* Ends - Input Fileds */
+
+/* Input Search Label styles */
+.a-label {
+
+  &Search {
+    position: relative;
+
+    /* Input Search - Icon Label styles */
+    &::before {
+      content: "i";
+      display: inline-block;
+      background-color: $color-secondary-pantone-2925;
+      font-size: 16px;
+      color: $color-secondary-blue-dark;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0.75em;
+      cursor: pointer;
+    }
+    /* Ends - Input Search - Icon Label styles */
+  }
+}
+/* Ends - Input Search Label styles */
+
+/* a-control dev */
+.a-control {
+  position: relative;
+
+  /* Checkboxes */
+  &--checkbox{
+
+    /* Checkboxes - Icon */
+    .a-control {
+      &__indicator {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent;
+        border-radius: $border-radius-small;
+        border: $border-med solid $color-secondary-blue-dark;
+
+        /* Checkboxes Checked - Icon */
+        &:after {
+          content: '';
+          width: 10px;
+          height: 5px;
+          position: absolute;
+          top: 4px;
+          left: 3px;
+          border: 2px solid $color-white;
+          border-top: none;
+          border-right: none;
+          background: transparent;
+          opacity: 0;
+          transform: rotate(-45deg);
+        }
+        /* Ends - Checkboxes Checked - Icon */
+
+        /* Checkboxes Hover */
+        &:hover::after {
+          //opacity: 0.5;
+        }
+        /* Ends - Checkboxes Hover */
+      }
+    }
+    /* Ends - Checkboxes - Icon */
+
+    /* Checkboxes Input */
+    input[type=checkbox] {
+      visibility: hidden;
+
+      /* Checkboxes Checked */
+      &:checked + .a-control__indicator {
+        background: $color-secondary-blue-light;
+        border: $border-none;
+
+        &:after {
+          opacity: 1;
+        }
+
+        /* Checkboxes Text */
+        + .a-control__label {
+          font-family: font-RobotoMedium;
+        }
+        /* Ends - Checkboxes Text */
+      }
+      /* Ends - Checkboxes Checked */
+
+      /* Checkboxes Disabled */
+      &[disabled="disabled"] + .a-control__indicator {
+        border: $border-med solid $color-neutral-grey-medium;
+
+        &:after {
+          //opacity: 1;
+        }
+
+        + .a-control__label {
+          color: $color-neutral-grey-medium;
+        }
+
+      }
+      /* Ends - Checkboxes Disabled */
+
+    }
+    /* Ends - Checkboxes Input */
+
+    /* Checkboxes Label */
+    label {
+      font-size: $font-size-base;
+      //display: inline-block;
+      margin: 0 8px;
+      color: $color-secondary-blue-dark;
+      line-height: 20px;
+    }
+    /* Ends - Checkboxes Label */
+
+  }
+  /* Ends - Checkboxes */
+
+  /* Radio Buttons */
+  &--radioButton{
+
+    /* Radio Buttons - Icon */
+    .a-control {
+      &__indicator {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent;
+        border-radius: $border-radius-base*100;
+        border: $border-med solid $color-secondary-blue-dark;
+
+        /* Radio Buttons Selected - Icon */
+        &:after {
+          content: '';
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          //border: 5px solid $color-secondary-blue-light;
+          background: $color-secondary-blue-light;
+          opacity: 0;
+          //transform: rotate(-45deg);
+          border-radius: 100px;
+        }
+        /* Ends - Radio Buttons Selected - Icon */
+
+        /* Radio Buttons Hover */
+        &:hover::after {
+          //opacity: 0.5;
+        }
+        /* Ends - Radio Buttons Hover */
+      }
+    }
+    /* Ends - Radio Buttons - Icon */
+
+    /* Radio Buttons Input */
+    input[type=radio] {
+      visibility: hidden;
+      &:checked + .a-control__indicator {
+        //background: $color-secondary-blue-light;
+        border: $border-med solid $color-neutral-grey-medium;
+
+        &:after {
+          opacity: 1;
+        }
+
+        + .a-control__label {
+          font-family: font-RobotoMedium;
+        }
+      }
+
+      /* Radio Buttons Disabled */
+      &[disabled="disabled"] + .a-control__indicator {
+        border: $border-med solid $color-neutral-grey-medium;
+
+        //&:after {
+        //  opacity: 1;
+        //}
+
+        + .a-control__label {
+          color: $color-neutral-grey-medium;
+        }
+
+      }
+      /* Ends - Radio Buttons Disabled */
+
+    }
+    /* Ends - Radio Buttons Input */
+
+    /* Radio Buttons Label */
+    label {
+      font-size: $font-size-base;
+      //display: inline-block;
+      margin: 0 8px;
+      color: $color-secondary-blue-dark;
+      line-height: 20px;
+    }
+    /* Ends - Radio Buttons Label */
+
+  }
+  /* Ends - Radio Buttons */
+
+  /* Switch */
+  & .switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 26px;
+
+    & input {
+      display:none;
+
+      /* Switch Checked */
+      &:checked + .slider {
+        background-color: rgba($color-primary-blue, 0.27);
+
+        /* Switch Checked Label */
+        & + .a-control__label {
+          font-family: font-RobotoMedium;
+          color: $color-secondary-blue-dark;
+        }
+        /* Ends - Switch Checked Label */
+      }
+      /* Ends - Switch Checked */
+
+      /* Switch Disabled Label */
+      &[disabled="disabled"] + .slider + .a-control__label {
+        color: $color-neutral-grey-medium;
+      }
+      /* Ends - Switch Checked Label */
+
+      //&:focus + .slider {
+      //  box-shadow: 0 0 1px #2196F3;
+      //}
+
+      /* Switch Checked - Internal Button */
+      &:checked + .slider:before {
+        background-color: $color-primary-blue;
+        opacity: 1;
+        -webkit-transform: translateX(18px);
+        -ms-transform: translateX(18px);
+        transform: translateX(18px);
+      }
+      /* Ends - Switch Checked - Internal Button */
+    }
+
+    & .a-control__label {
+      margin: 0 54px;
+      font-size: $font-size-base;
+      line-height: 26px;
+      color: $color-neutral-grey-dark;
+    }
+
+    /* Switch Slider */
+    & .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $color-neutral-pantone-7541;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 100px;
+
+      /* Switch Slider - Internal Button */
+      &:before {
+        position: absolute;
+        content: "";
+        height: 24px;
+        width: 24px;
+        left: 2px;
+        bottom: 1px;
+        background-color: $color-white;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 50%;
+        box-shadow: 0 0 2px 0 rgba($color-black,0.12), 0 2px 2px 0 rgba($color-black,0.24);
+      }
+      /* Ends - Switch Slider - Internal Button */
+    }
+    /* Ends - Switch Slider */
+
+  }
+  /* Ends - Switch */
+
+
+  /* Date Selector */
+  &--dateSelector{
+    width: auto;
+    display: inline-block;
+    border: $border-med solid $color-neutral-pantone-7541;
+    border-radius: $border-radius-base;
+
+    /* Date Selector Input */
+    input[type=radio] {
+      visibility: hidden;
+      position: absolute;
+      &:checked {
+        //background: $color-secondary-blue-light;
+        //border: $border-med solid $color-neutral-grey-medium;
+
+        &:after {
+          opacity: 1;
+        }
+
+        + .a-control__label {
+          font-family: font-RobotoMedium;
+          background-color: $color-neutral-pantone-7541;
+          color: $color-secondary-blue-dark;
+        }
+      }
+
+    }
+    /* Ends - Date Selector Input */
+
+    /* Date Selector Label */
+    label {
+      font-size: $font-size-med;
+      display: inline-block;
+      margin: 0;
+      color: $color-neutral-grey-medium;
+      line-height: 20px;
+      border: $border-med solid $color-neutral-pantone-7541;
+      float: left;
+
+      & .a-control__label {
+        padding: 12px;
+        display: inline-block;
+        min-width: 100px;
+        text-align: center;
+      }
+    }
+    /* Ends - Date Selector Label */
+
+  }
+  /* Ends - Date Selector */
+
+}
+/* Ends - a-control dev */
+
+
+/* Text area */
+.a-textArea {
+  height: auto;
+  border: $border-base solid $color-neutral-grey-medium;
+  padding: $pad;
+  border-radius: $border-radius-small $border-radius-small 0 $border-radius-small;
+  line-height: 1.18;
+}
+/* ends - Text area */

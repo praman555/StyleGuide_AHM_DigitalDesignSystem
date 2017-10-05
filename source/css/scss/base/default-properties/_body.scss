@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    #BODY
+\*------------------------------------*/
+
+/**
+ * Body base styles
+ */
+body {
+  background-color: $color-white;
+  color: $color-neutral-grey-darkest;
+  font-family: "font-RobotoRegular";
+  font-size: $font-size-med;
+  line-height: 1.375;
+  -webkit-text-size-adjust: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,74 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+h1, h3, h4, h5, h6, h7, h8 {
+  font-family: font-RobotoRegular;
+  font-weight: normal;
+}
+
+/**
+ * Heading 1
+ */
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.14;
+}
+
+/**
+ * Heading 2
+ */
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.14;
+  font-family: font-RobotoLight;
+  font-weight: 300;
+}
+
+/**
+ * Heading 3
+ */
+h3 {
+  line-height: 1.1;
+  font-size: 2rem;
+}
+
+/**
+ * Heading 4
+ */
+h4 {
+  line-height: 1.25;
+  font-size: 1.75rem;
+}
+
+/**
+ * Heading 5
+ */
+h5 {
+  line-height: 1.333;
+  font-size: 1.5rem;
+}
+
+/**
+ * Heading 6
+ */
+h6 {
+  line-height: 1.45;
+  font-size: 1.25rem;
+}
+
+/**
+ * Heading 7
+ */
+h7 {
+  line-height: 2;
+  font-size: 1rem;
+}
+
+/**
+ * Heading 8
+ */
+h8 {
+  line-height: 2.41;
+  font-size: 0.75rem;
+}

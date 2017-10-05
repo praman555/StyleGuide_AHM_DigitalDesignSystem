@@ -1,0 +1,110 @@
+/* Button styles */
+.a-button {
+  display: inline-block;
+  font-family: font-RobotoRegular;
+  font-size: $font-size-med;
+  line-height: 1;
+  padding: 0.6875rem 1.375rem;
+  border: $border-none;
+  border-radius: $border-radius-small;
+  text-align: center;
+  transition: background $animation-speed-quick $animation-ease;
+
+  /* Button Primary */
+  &--primary {
+    background-color: $color-primary-blue;
+    color: $color-white;
+
+    /* Button Primary hover */
+    &:hover {
+      background-color: $color-secondary-pantone-2925;
+      font-family: "font-RobotoMedium";
+    }
+    /* ends - Button Primary hover */
+
+    /* Button Primary disabled */
+    &[disabled='disabled'], &[disabled='disabled']:hover {
+      background-color: $color-neutral-grey-medium;
+      color: $color-neutral-pantone-7541;
+      font-family: font-RobotoRegular;
+    }
+    /* ends - Button Primary disabled */
+
+  }
+  /* ends - Button Primary */
+
+
+  /* Button Secondary */
+  &--secondary {
+    background-color: #CCDFED;
+    color: $color-primary-blue;
+
+    /* Button Secondary hover */
+    &:hover {
+      background-color: #B2CEE4;
+      font-family: "font-RobotoMedium";
+    }
+    /* ends - Button Secondary hover */
+
+    /* Button Secondary disabled */
+    &[disabled='disabled'], &[disabled='disabled']:hover {
+      //background-color: rgba(178, 186, 196, 0.45);
+      background-color: rgba($color-neutral-grey-medium, 0.45);
+      color: $color-neutral-grey-medium;
+      font-family: font-RobotoRegular;
+    }
+    /* ends - Button Secondary disabled */
+
+  }
+  /* ends - Button Secondary */
+
+
+  /* Button Wired */
+  &--wired {
+    background-color: transparent;
+    color: $color-neutral-grey-dark;
+    border: $border-base solid $color-neutral-grey-dark;
+
+    /* Button Wired hover */
+    &:hover {
+      border: $border-base solid $color-neutral-grey-medium;
+    }
+    /* ends - Button Wired hover */
+
+    /* Button Wired disabled */
+    &[disabled='disabled'], &[disabled='disabled']:hover {
+      color: $color-neutral-grey-medium;
+      border: $border-base solid $color-neutral-pantone-7541;
+      background-color: $color-neutral-grey-light;
+    }
+    /* ends - Button Wired disabled */
+
+  }
+  /* ends - Button Wired */
+
+
+  /* Button Text */
+  &--text {
+    background-color: transparent;
+    color: $color-secondary-pantone-2925;
+
+    /* Button Text hover */
+    &:hover {
+      background-color: #CDEFFC;
+      font-family: "font-RobotoMedium";
+    }
+    /* ends - Button Text hover */
+
+    /* Button Text disabled */
+    &[disabled='disabled'], &[disabled='disabled']:hover {
+      color: #BEC7CE;
+      font-family: font-RobotoRegular;
+      background-color: transparent;
+    }
+    /* ends - Button Text disabled */
+
+  }
+  /* Button Text */
+
+}
+/* ends - Button styles */

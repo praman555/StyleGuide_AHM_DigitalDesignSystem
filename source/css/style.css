@@ -1,0 +1,629 @@
+/*------------------------------------*    BASE CSS files
+\*------------------------------------*/
+/*------------------------------------*    #ANIMATION
+\*------------------------------------*/
+/**
+ * Animation Duration
+ */
+/**
+ * Animation Easing
+ */
+/*------------------------------------*    #1 - Border Size
+\*------------------------------------*/
+/*------------------------------------*    #2 - Border Radius
+\*------------------------------------*/
+/*------------------------------------*    #COLORS
+\*------------------------------------*/
+/*
+ * 1) Color variables involve four varients to keep colors in sync. The
+ *    first varient defines the Primary colors, the second varient
+ *    defines the Secondary colors, the third varient defines the Neutral
+      colors and the fourth varient defines Utility colors.
+ */
+/*
+ * Base Colors
+ */
+/*
+ * Primary Colors
+ */
+/*
+ * Secondary Colors
+ */
+/*
+ * Neutral Colors
+ */
+/*
+ * Utility Colors
+ */
+/*------------------------------------*    #1 - Font Family
+\*------------------------------------*/
+/*
+ * 1) Font families involve three varients to keep fonts in sync. The
+ *    first varient defines the Light fonts, the second varient
+ *    defines the Medium fonts and the third varient defines the Regular
+      fonts.
+ */
+/*
+ * Light Fonts
+ */
+@font-face {
+  font-family: 'font-RobotoLight';
+  src: url("../../../fonts/roboto-light-webfont.woff2") format("woff2"), url("../../../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/*
+ * Medium Fonts
+ */
+@font-face {
+  font-family: 'font-RobotoMedium';
+  src: url("../../../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../../../fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/*
+ * Regular Fonts
+ */
+@font-face {
+  font-family: 'font-RobotoRegular';
+  src: url("../../../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../../../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/*------------------------------------*    #2 - Font Size
+\*------------------------------------*/
+/* Spacing Defaults */
+/* ends - Spacing Defaults */
+/*------------------------------------*    #BODY
+\*------------------------------------*/
+/**
+ * Body base styles
+ */
+body {
+  background-color: #ffffff;
+  color: #232323;
+  font-family: "font-RobotoRegular";
+  font-size: 16px;
+  line-height: 1.375;
+  -webkit-text-size-adjust: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+/*------------------------------------*    #FORMS
+\*------------------------------------*/
+/**
+ * Label base styles
+ */
+label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.333; }
+
+/**
+ * Form button, input, select, and text area base styles
+ * 1) Zero out margin and inherit font styles
+ */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+/**
+ * Input and text area base styles
+ * 1) Width entire container, gray border, padding
+ */
+input, textarea {
+  width: 100%;
+  line-height: normal;
+  vertical-align: baseline; }
+
+/**
+ * Input areas base styles
+ * 1) Get rid of webkit appearance of these areas
+ */
+input[type=text], input[type=url], input[type=number], textarea {
+  -webkit-appearance: none; }
+
+/**
+ * Button/Submit button base styles
+ */
+button, input[type="submit"] {
+  cursor: pointer; }
+
+/**
+ * Checkboxes/Radio button base styles
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: 0.3em; }
+
+/**
+ * Search cancel button and search decoration webkit appearance none
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px !important;
+  font-size: 21px;
+  line-height: inherit;
+  border: 0; }
+
+hr {
+  margin: 8px 0 8px 0 !important;
+  padding: 0 !important;
+  border-top: 0;
+  height: 0; }
+
+/* added by vilma */
+textarea.form-control {
+  height: auto; }
+
+.control-label {
+  padding: 0 15px; }
+
+/*------------------------------------*    #HEADINGS
+\*------------------------------------*/
+h1, h3, h4, h5, h6, h7, h8 {
+  font-family: font-RobotoRegular;
+  font-weight: normal; }
+
+/**
+ * Heading 1
+ */
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.14; }
+
+/**
+ * Heading 2
+ */
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.14;
+  font-family: font-RobotoLight;
+  font-weight: 300; }
+
+/**
+ * Heading 3
+ */
+h3 {
+  line-height: 1.1;
+  font-size: 2rem; }
+
+/**
+ * Heading 4
+ */
+h4 {
+  line-height: 1.25;
+  font-size: 1.75rem; }
+
+/**
+ * Heading 5
+ */
+h5 {
+  line-height: 1.333;
+  font-size: 1.5rem; }
+
+/**
+ * Heading 6
+ */
+h6 {
+  line-height: 1.45;
+  font-size: 1.25rem; }
+
+/**
+ * Heading 7
+ */
+h7 {
+  line-height: 2;
+  font-size: 1rem; }
+
+/**
+ * Heading 8
+ */
+h8 {
+  line-height: 2.41;
+  font-size: 0.75rem; }
+
+/*------------------------------------*    #LINKS
+\*------------------------------------*/
+/**
+ * Ordered/Unordered list base styles
+ */
+ol, ul {
+  line-height: 0.625; }
+
+/*------------------------------------*    Atoms
+\*------------------------------------*/
+/* Button styles */
+.a-button {
+  display: inline-block;
+  font-family: font-RobotoRegular;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0.6875rem 1.375rem;
+  border: 0px;
+  border-radius: 3px;
+  text-align: center;
+  transition: background 0.2s ease;
+  /* Button Primary */
+  /* ends - Button Primary */
+  /* Button Secondary */
+  /* ends - Button Secondary */
+  /* Button Wired */
+  /* ends - Button Wired */
+  /* Button Text */
+  /* Button Text */ }
+  .a-button--primary {
+    background-color: #005DA6;
+    color: #ffffff;
+    /* Button Primary hover */
+    /* ends - Button Primary hover */
+    /* Button Primary disabled */
+    /* ends - Button Primary disabled */ }
+    .a-button--primary:hover {
+      background-color: #00ABEE;
+      font-family: "font-RobotoMedium"; }
+    .a-button--primary[disabled='disabled'], .a-button--primary[disabled='disabled']:hover {
+      background-color: #B2BAC4;
+      color: #D9E1E2;
+      font-family: font-RobotoRegular; }
+  .a-button--secondary {
+    background-color: #CCDFED;
+    color: #005DA6;
+    /* Button Secondary hover */
+    /* ends - Button Secondary hover */
+    /* Button Secondary disabled */
+    /* ends - Button Secondary disabled */ }
+    .a-button--secondary:hover {
+      background-color: #B2CEE4;
+      font-family: "font-RobotoMedium"; }
+    .a-button--secondary[disabled='disabled'], .a-button--secondary[disabled='disabled']:hover {
+      background-color: rgba(178, 186, 196, 0.45);
+      color: #B2BAC4;
+      font-family: font-RobotoRegular; }
+  .a-button--wired {
+    background-color: transparent;
+    color: #7A7F84;
+    border: 1px solid #7A7F84;
+    /* Button Wired hover */
+    /* ends - Button Wired hover */
+    /* Button Wired disabled */
+    /* ends - Button Wired disabled */ }
+    .a-button--wired:hover {
+      border: 1px solid #B2BAC4; }
+    .a-button--wired[disabled='disabled'], .a-button--wired[disabled='disabled']:hover {
+      color: #B2BAC4;
+      border: 1px solid #D9E1E2;
+      background-color: #F5F3F5; }
+  .a-button--text {
+    background-color: transparent;
+    color: #00ABEE;
+    /* Button Text hover */
+    /* ends - Button Text hover */
+    /* Button Text disabled */
+    /* ends - Button Text disabled */ }
+    .a-button--text:hover {
+      background-color: #CDEFFC;
+      font-family: "font-RobotoMedium"; }
+    .a-button--text[disabled='disabled'], .a-button--text[disabled='disabled']:hover {
+      color: #BEC7CE;
+      font-family: font-RobotoRegular;
+      background-color: transparent; }
+
+/* ends - Button styles */
+/* Input Fileds */
+.a-input {
+  /* Common Input styles */
+  /* Ends - Common Input styles */
+  /* Input Text styles */
+  /* Ends - Input Text styles */
+  /* Input Search styles */
+  /* Ends - Input Search styles */ }
+  .a-inputCommon, .a-inputText, .a-inputSearch {
+    border: 1px solid #B2BAC4;
+    border-radius: 3px;
+    line-height: 1;
+    font-size: 16px;
+    font-family: font-RobotoRegular; }
+  .a-inputText {
+    padding: 0.75019em 0.5em;
+    /* Input Text - Disabled styles */
+    /* Ends - Input Text - Disabled styles */
+    /* Input Text - Focused styles */
+    /* Ends - Input Text - Focused styles */
+    /* Input Text - Success styles */
+    /* Ends - Input Text - Success styles */
+    /* Input Text - Error styles */
+    /* Ends - Input Text - Error styles */ }
+    .a-inputText[disabled="disabled"] {
+      background-color: #D9E1E2; }
+    .a-inputText:focus {
+      border: 2px solid #00ABEE; }
+    .a-inputText--success {
+      border: 2px solid #76B852; }
+      .a-inputText--successMessage {
+        color: #76B852;
+        margin: 4px 0;
+        display: block; }
+    .a-inputText--error {
+      border: 2px solid #EE4F4F; }
+      .a-inputText--errorMessage {
+        color: #EE4F4F;
+        margin: 4px 0;
+        display: block; }
+  .a-inputSearch {
+    padding: 0.75em 0.75em 0.75em 2.5em; }
+
+/* Ends - Input Fileds */
+/* Input Search Label styles */
+.a-labelSearch {
+  position: relative;
+  /* Input Search - Icon Label styles */
+  /* Ends - Input Search - Icon Label styles */ }
+  .a-labelSearch::before {
+    content: "i";
+    display: inline-block;
+    background-color: #00ABEE;
+    font-size: 16px;
+    color: #003150;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.75em;
+    cursor: pointer; }
+
+/* Ends - Input Search Label styles */
+/* a-control dev */
+.a-control {
+  position: relative;
+  /* Checkboxes */
+  /* Ends - Checkboxes */
+  /* Radio Buttons */
+  /* Ends - Radio Buttons */
+  /* Switch */
+  /* Ends - Switch */
+  /* Date Selector */
+  /* Ends - Date Selector */ }
+  .a-control--checkbox {
+    /* Checkboxes - Icon */
+    /* Ends - Checkboxes - Icon */
+    /* Checkboxes Input */
+    /* Ends - Checkboxes Input */
+    /* Checkboxes Label */
+    /* Ends - Checkboxes Label */ }
+    .a-control--checkbox .a-control__indicator {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: transparent;
+      border-radius: 3px;
+      border: 2px solid #003150;
+      /* Checkboxes Checked - Icon */
+      /* Ends - Checkboxes Checked - Icon */
+      /* Checkboxes Hover */
+      /* Ends - Checkboxes Hover */ }
+      .a-control--checkbox .a-control__indicator:after {
+        content: '';
+        width: 10px;
+        height: 5px;
+        position: absolute;
+        top: 4px;
+        left: 3px;
+        border: 2px solid #ffffff;
+        border-top: none;
+        border-right: none;
+        background: transparent;
+        opacity: 0;
+        transform: rotate(-45deg); }
+    .a-control--checkbox input[type=checkbox] {
+      visibility: hidden;
+      /* Checkboxes Checked */
+      /* Ends - Checkboxes Checked */
+      /* Checkboxes Disabled */
+      /* Ends - Checkboxes Disabled */ }
+      .a-control--checkbox input[type=checkbox]:checked + .a-control__indicator {
+        background: #4374BF;
+        border: 0px;
+        /* Checkboxes Text */
+        /* Ends - Checkboxes Text */ }
+        .a-control--checkbox input[type=checkbox]:checked + .a-control__indicator:after {
+          opacity: 1; }
+        .a-control--checkbox input[type=checkbox]:checked + .a-control__indicator + .a-control__label {
+          font-family: font-RobotoMedium; }
+      .a-control--checkbox input[type=checkbox][disabled="disabled"] + .a-control__indicator {
+        border: 2px solid #B2BAC4; }
+        .a-control--checkbox input[type=checkbox][disabled="disabled"] + .a-control__indicator + .a-control__label {
+          color: #B2BAC4; }
+    .a-control--checkbox label {
+      font-size: 14px;
+      margin: 0 8px;
+      color: #003150;
+      line-height: 20px; }
+  .a-control--radioButton {
+    /* Radio Buttons - Icon */
+    /* Ends - Radio Buttons - Icon */
+    /* Radio Buttons Input */
+    /* Ends - Radio Buttons Input */
+    /* Radio Buttons Label */
+    /* Ends - Radio Buttons Label */ }
+    .a-control--radioButton .a-control__indicator {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: transparent;
+      border-radius: 400px;
+      border: 2px solid #003150;
+      /* Radio Buttons Selected - Icon */
+      /* Ends - Radio Buttons Selected - Icon */
+      /* Radio Buttons Hover */
+      /* Ends - Radio Buttons Hover */ }
+      .a-control--radioButton .a-control__indicator:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        background: #4374BF;
+        opacity: 0;
+        border-radius: 100px; }
+    .a-control--radioButton input[type=radio] {
+      visibility: hidden;
+      /* Radio Buttons Disabled */
+      /* Ends - Radio Buttons Disabled */ }
+      .a-control--radioButton input[type=radio]:checked + .a-control__indicator {
+        border: 2px solid #B2BAC4; }
+        .a-control--radioButton input[type=radio]:checked + .a-control__indicator:after {
+          opacity: 1; }
+        .a-control--radioButton input[type=radio]:checked + .a-control__indicator + .a-control__label {
+          font-family: font-RobotoMedium; }
+      .a-control--radioButton input[type=radio][disabled="disabled"] + .a-control__indicator {
+        border: 2px solid #B2BAC4; }
+        .a-control--radioButton input[type=radio][disabled="disabled"] + .a-control__indicator + .a-control__label {
+          color: #B2BAC4; }
+    .a-control--radioButton label {
+      font-size: 14px;
+      margin: 0 8px;
+      color: #003150;
+      line-height: 20px; }
+  .a-control .switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 26px;
+    /* Switch Slider */
+    /* Ends - Switch Slider */ }
+    .a-control .switch input {
+      display: none;
+      /* Switch Checked */
+      /* Ends - Switch Checked */
+      /* Switch Disabled Label */
+      /* Ends - Switch Checked Label */
+      /* Switch Checked - Internal Button */
+      /* Ends - Switch Checked - Internal Button */ }
+      .a-control .switch input:checked + .slider {
+        background-color: rgba(0, 93, 166, 0.27);
+        /* Switch Checked Label */
+        /* Ends - Switch Checked Label */ }
+        .a-control .switch input:checked + .slider + .a-control__label {
+          font-family: font-RobotoMedium;
+          color: #003150; }
+      .a-control .switch input[disabled="disabled"] + .slider + .a-control__label {
+        color: #B2BAC4; }
+      .a-control .switch input:checked + .slider:before {
+        background-color: #005DA6;
+        opacity: 1;
+        -webkit-transform: translateX(18px);
+        -ms-transform: translateX(18px);
+        transform: translateX(18px); }
+    .a-control .switch .a-control__label {
+      margin: 0 54px;
+      font-size: 14px;
+      line-height: 26px;
+      color: #7A7F84; }
+    .a-control .switch .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #D9E1E2;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 100px;
+      /* Switch Slider - Internal Button */
+      /* Ends - Switch Slider - Internal Button */ }
+      .a-control .switch .slider:before {
+        position: absolute;
+        content: "";
+        height: 24px;
+        width: 24px;
+        left: 2px;
+        bottom: 1px;
+        background-color: #ffffff;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 50%;
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24); }
+  .a-control--dateSelector {
+    width: auto;
+    display: inline-block;
+    border: 2px solid #D9E1E2;
+    border-radius: 4px;
+    /* Date Selector Input */
+    /* Ends - Date Selector Input */
+    /* Date Selector Label */
+    /* Ends - Date Selector Label */ }
+    .a-control--dateSelector input[type=radio] {
+      visibility: hidden;
+      position: absolute; }
+      .a-control--dateSelector input[type=radio]:checked:after {
+        opacity: 1; }
+      .a-control--dateSelector input[type=radio]:checked + .a-control__label {
+        font-family: font-RobotoMedium;
+        background-color: #D9E1E2;
+        color: #003150; }
+    .a-control--dateSelector label {
+      font-size: 16px;
+      display: inline-block;
+      margin: 0;
+      color: #B2BAC4;
+      line-height: 20px;
+      border: 2px solid #D9E1E2;
+      float: left; }
+      .a-control--dateSelector label .a-control__label {
+        padding: 12px;
+        display: inline-block;
+        min-width: 100px;
+        text-align: center; }
+
+/* Ends - a-control dev */
+/* Text area */
+.a-textArea {
+  height: auto;
+  border: 1px solid #B2BAC4;
+  padding: 1em;
+  border-radius: 3px 3px 0 3px;
+  line-height: 1.18; }
+
+/* ends - Text area */
+/* Pagination */
+.a-pagination {
+  list-style: none;
+  padding: 0; }
+  .a-pagination li {
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    padding: 0 16px;
+    /* Pagination link */
+    /* ends - Pagination link */
+    /* Pagination link active */
+    /* ends - Pagination link active */
+    /* Pagination link disabled */
+    /* ends - Pagination link disabled */ }
+    .a-pagination li a {
+      text-decoration: none;
+      color: #585858; }
+    .a-pagination li.active a {
+      color: #00ABEE; }
+    .a-pagination li.disabled a {
+      pointer-events: none;
+      color: #B2BAC4; }
+
+/* ends - Pagination */

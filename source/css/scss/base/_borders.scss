@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    #1 - Border Size
+\*------------------------------------*/
+$border-base: 1px;
+$border-med: ($border-base)+1px;
+$border-none: 0px;
+
+
+/*------------------------------------*\
+    #2 - Border Radius
+\*------------------------------------*/
+$border-radius-base: 4px;
+$border-radius-small: ($border-radius-base)-1px;
+$border-radius-med: ($border-radius-base)+1px;

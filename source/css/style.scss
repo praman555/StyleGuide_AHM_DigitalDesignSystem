@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    BASE CSS files
+\*------------------------------------*/
+@import "scss/base/animation";
+@import "scss/base/borders";
+@import "scss/base/colors";
+@import "scss/base/fonts";
+@import "scss/base/spacing";
+@import "scss/base/default-properties/body";
+@import "scss/base/default-properties/forms";
+@import "scss/base/default-properties/heading";
+@import "scss/base/default-properties/lists";
+
+
+/*------------------------------------*\
+    Atoms
+\*------------------------------------*/
+@import "scss/atoms/buttons";
+@import "scss/atoms/forms";
+@import "scss/atoms/pagination";

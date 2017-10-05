@@ -1,0 +1,55 @@
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+
+/*
+ * 1) Color variables involve four varients to keep colors in sync. The
+ *    first varient defines the Primary colors, the second varient
+ *    defines the Secondary colors, the third varient defines the Neutral
+      colors and the fourth varient defines Utility colors.
+ */
+
+
+
+/*
+ * Base Colors
+ */
+$color-white: #ffffff;
+$color-black: #000000;
+
+
+/*
+ * Primary Colors
+ */
+$color-primary-blue: #005DA6;
+$color-primary-green: #6BAF00;
+
+
+/*
+ * Secondary Colors
+ */
+$color-secondary-blue-dark: #003150;
+$color-secondary-blue-light: #4374BF;
+$color-secondary-pantone-2925: #00ABEE;
+$color-secondary-pantone-131: #CE8E00;
+$color-secondary-pantone-382: #ACCC00;
+$color-secondary-purple-c: #BB29BB;
+
+
+/*
+ * Neutral Colors
+ */
+$color-neutral-grey-darkest: #232323;
+$color-neutral-grey-darker: #585858;
+$color-neutral-grey-dark: #7A7F84;
+$color-neutral-grey-medium: #B2BAC4;
+$color-neutral-pantone-7541: #D9E1E2;
+$color-neutral-grey-light: #F5F3F5;
+
+
+/*
+ * Utility Colors
+ */
+$color-utility-error: #EE4F4F;
+$color-utility-success: #76B852;
+$color-utility-warning: #FFB75D;
